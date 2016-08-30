@@ -40,6 +40,18 @@ cc_defaults {
             ],
         },
 
+        linux_glibc: {
+            srcs: [
+                "src/sestatus.c",
+            ],
+        },
+
+        linux_bionic: {
+            srcs: [
+                "src/sestatus.c",
+            ],
+        },
+
         android: {
             srcs: [
                 "src/android/android.c",
