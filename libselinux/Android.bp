@@ -70,7 +70,6 @@ cc_defaults {
                 "src/policyvers.c",
                 "src/procattr.c",
                 "src/reject_unknown.c",
-                "src/sestatus.c",
                 "src/setenforce.c",
                 "src/setfilecon.c",
                 "src/stringrep.c",
@@ -111,6 +110,7 @@ cc_library {
     srcs: [
         "src/label_file.c",
         "src/regex.c",
+        "src/sestatus.c",
     ],
 
     target: {
