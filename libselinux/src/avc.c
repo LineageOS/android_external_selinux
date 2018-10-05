@@ -697,7 +697,7 @@ void avc_audit(security_id_t ssid, security_id_t tsid,
 {
 	access_vector_t denied, audited;
 
-	denied = requested & ~avd->allowed;
+	denied = 0;//requested & ~avd->allowed;
 	if (denied)
 		audited = denied & avd->auditdeny;
 	else if (!requested || result)
