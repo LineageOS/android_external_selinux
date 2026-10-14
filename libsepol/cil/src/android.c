@@ -125,12 +125,6 @@ static int __extract_attributees_helper(struct cil_tree_node *node, uint32_t *fi
 			CIL_KEY_TYPEPERMISSIVE, node->line);
 		goto exit;
 		break;
-	case CIL_NAMETYPETRANSITION:
-	case CIL_TYPE_RULE:
-		cil_log(CIL_ERR, "%s unsupported statement in attributee policy (line %d)\n",
-			CIL_KEY_TYPETRANSITION, node->line);
-		goto exit;
-		break;
 	default:
 		break;
 	}
